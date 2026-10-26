@@ -8,7 +8,7 @@
 
 ## Запуск
 
-Нужен Node.js 20+.
+Нужен Node.js 20.19.4+, 22.13+ или 24.3+. Проверено на Node.js 24.18.1.
 
 ```bash
 npm install
@@ -16,6 +16,16 @@ npm run web      # откроется в браузере — телефон н�
 # или
 npm start        # QR-код для Expo Go на телефоне
 ```
+
+Проверки решения:
+
+```bash
+npm test
+npm run typecheck
+npx expo export --platform web
+```
+
+Пояснения к реализации — в [SOLUTION.md](SOLUTION.md).
 
 Проект — Expo + React Native + TypeScript. Если раньше вы писали только на React для веба, это не страшно: вместо `div` здесь `View`, вместо `span` — `Text`, вместо `button` — `Pressable`, списки — `FlatList`.
 
